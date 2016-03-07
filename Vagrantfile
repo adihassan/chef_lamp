@@ -29,12 +29,13 @@ Vagrant.configure("2") do |config|
         chef.cookbooks_path = ["cookbooks"]
         chef.add_recipe "apache2"
 		chef.add_recipe "php"
-		#chef.add_recipe "mysql"
+		#chef.add_recipe "mysql::server"
+		#chef.add_recipe "mysql::client"
+	
   
         chef.json = { 
 		:apache => { :default_site_enabled => true },
 		:php_packages   => %w{ php5-mysqlnd php5-curl php5-mcrypt php5-memcached php5-gd }
-		}
-    
+  }
  end
 end

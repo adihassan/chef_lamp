@@ -7,6 +7,6 @@ version          '0.1.0'
 
 depends "build-essential", "~> 1.4.0"
 depends "apache2"
-depends "mysql"
+depends 'mysql', '~> 6.0'
 depends "database"
 depends "php"

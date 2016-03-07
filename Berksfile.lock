@@ -17,7 +17,7 @@ GRAPH
     apache2 (>= 0.0.0)
     build-essential (~> 1.4.0)
     database (>= 0.0.0)
-    mysql (>= 0.0.0)
+    mysql (~> 6.0)
     php (>= 0.0.0)
   mysql (6.1.2)
     smf (>= 0.0.0)
